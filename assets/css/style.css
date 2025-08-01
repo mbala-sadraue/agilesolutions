@@ -1,3 +1,17 @@
+html,body {
+    scroll-behavior: auto !important
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--body-color);
+    line-height: 26px;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased
+}
+
 .header{
   background-color: #fff;
 }
@@ -5,4 +19,71 @@
  {
     position: relative;
     z-index: 41;
+}
+.header-top{
+    background-color: #010F1C;
+    padding: 10.7px 0;
+    --body-color: #fff;
+}
+
+.header .header-links {
+    padding-left: 70px;
+}
+
+.header-links ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.header-links li:not(:last-child) {
+    margin: 0 58px 0 0;
+}
+
+.header-links li, .header-links span, .header-links p, .header-links a {
+    color: var(--body-color);
+}
+.header-links li {
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+    /* font-size: 16px; */
+    font-weight: 400;
+    font-family: var(--title-font);
+}
+.header-links li:not(:last-child):after {
+    content: '';
+    height: 14px;
+    width: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 5px;
+    right: -32px;
+}
+
+.header-links li>i {
+    color: var(--secondary-color);
+    margin-right: 6px;
+}
+.social-links .social-title {
+    font-weight: 400;
+    font-size: 14px;
+    display: inline-block;
+    margin: 0 10px 0 0;
+    font-family: var(--body-font);
+    color: var(--body-color);
+}
+.social-links a {
+    font-size: 14px;
+    display: inline-block;
+    color: var(--body-color);
+    margin: 0 15px 0 0;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+
+@media (min-width: 1200px) {
+    .d-xl-inline-block {
+        display: inline-block !important;
+    }
 }

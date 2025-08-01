@@ -1,4 +1,4 @@
-:root{
+:root {
     --primary-color: #1979C2;
     --secondary-color: #FFB30F;
     --success-color: #28a745;
@@ -7,11 +7,15 @@
     --info-color: #17a2b8;
     --light-color: #f8f9fa;
     --dark-color: #343a40;
-    --text-color:#757F95;
+    --text-color: #757F95;
 
-    --font-family: 'Roboto', sans-serif;
+    --body-color: #fff;
+
+    /* --font-family: 'Roboto', sans-serif;
     --font-size-base: 16px;
     --line-height-base: 1.5;
     --border-radius: 0.25rem;
-    --transition-duration: 0.3s;
+    --transition-duration: 0.3s; */
+    --body-font: "DM Sans", sans-serif;
+    --title-font: "Anek Latin", sans-serif;
 }
