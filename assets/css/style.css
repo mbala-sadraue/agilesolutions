@@ -1,0 +1,8 @@
+.header{
+  background-color: #fff;
+}
+.th-header
+ {
+    position: relative;
+    z-index: 41;
+}
