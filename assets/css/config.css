@@ -1,6 +1,7 @@
 :root {
     --primary-color: #1979C2;
     --secondary-color: #FFB30F;
+    --theme-color: #57B33E;
     --success-color: #28a745;
     --danger-color: #dc3545;
     --warning-color: #ffc107;
@@ -8,8 +9,9 @@
     --light-color: #f8f9fa;
     --dark-color: #343a40;
     --text-color: #757F95;
+    --white-color: #fff;
 
-    --body-color: #fff;
+    --body-color: #4D5765;
 
     /* --font-family: 'Roboto', sans-serif;
     --font-size-base: 16px;
