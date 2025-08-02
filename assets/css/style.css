@@ -43,7 +43,6 @@ body {
 }
 
 
-
 .header .header-links {
     padding-left: 70px;
 }
@@ -172,52 +171,40 @@ a {
     }
 }
 /* Header main */
-
-.sticky-wrapper {
-    -webkit-transition: 0.4s ease-in-out;
-    transition: 0.4s ease-in-out;
-}
-
-.header .menu-area {
-    padding: 12.2px 0;
-}
-
-.header .menu-area .container-fiuld {
+.header .header-main .container-fluid {
     margin-left: 60px;
     margin-right: 95px;
 }
-
-.header .menu-area .main-menu {
-    margin-left: 100px;
+.navbar-brand{
+    color: var(--white-color);
 }
-.main-menu ul li:first-child {
-    margin-left: 0 !important;
-}
-
-.main-menu ul li {
-    list-style-type: none;
-    display: inline-block;
+.header  .header-main .nav-link {
+    display: block;
     position: relative;
+    font-family: var(--title-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    color: #121212;
+    font-family: var(--body-font);
+    text-transform: capitalize;
+    padding: 5.5px 20px;
+     transition: all 0.4s ease-in-out;
+    
 }
-.main-menu.style2>ul>li {
-    margin: 0;
+header  .header-main .nav-link:hover{
+    color: var(--secondary-color);
+    background-color: #bba4724d;
+    border-radius: 100px;
+   
 }
-
-
-.bg-mask {
-    -webkit-mask-size: 100% 100%;
-    mask-size: 100% 100%;
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat
+.header .header-main  .navbar-collapse{
+    margin-left: 200px;
 }
-.header .logo-bg {
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 17.9%;
-    height: 82.73px;
-    z-index: -1;
-    background-color: #010F1C
+.header .header-button .icon-btn img {
+    padding-bottom: 3px;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 .header-button {
@@ -230,18 +217,13 @@ a {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    gap: 15px
+    gap: 15px;
 }
-
-.header-button .icon-btn {
-    position: relative
-}
-
 .icon-btn {
     display: inline-block;
-    width: var(--btn-size, 56px);
-    height: var(--btn-size, 56px);
-    line-height: var(--btn-size, 56px);
+    width:56px;
+    height:56px;
+    line-height:56px;
     font-size: var(--btn-font-size, 18px);
     background-color: var(--icon-bg, transparent);
     border: 1px solid var(--smoke-color);
@@ -249,22 +231,9 @@ a {
     text-align: center;
     border-radius: 14px;
     -webkit-transition: 0.4s ease-in-out;
-    transition: 0.4s ease-in-out
+    transition: 0.4s ease-in-out;
 }
 
-.icon-btn a {
-    color: var(--title-color)
-}
-
-.icon-btn:hover {
-    background-color: var(--theme-color);
-    color: var(--white-color);
-    border-color: var(--theme-color)
-}
-
-.icon-btn.th-radius {
-    border-radius: 100px
-}
 .th-btn {
     position: relative;
     z-index: 2;
@@ -272,11 +241,11 @@ a {
     vertical-align: middle;
     display: inline-block;
     text-align: center;
-    background-color: var(--theme-color);
+    background-color: var(--secondary-color);
     font-family: var(--title-font);
     border: none;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     text-transform: capitalize;
     color: var(--white-color);
     line-height: 1;
@@ -288,27 +257,17 @@ a {
     -webkit-transition-delay: 0s;
     transition-delay: 0s;
 }
-.th-btn .btn-text {
-    display: inline-block;
-    position: relative;
-    z-index: 1;
-    margin-bottom: 2px;
-    text-align: center;
-}
-.th-btn::after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: var(--title-color);
-    position: absolute;
-    top: 100%;
-    left: 0;
-    border-radius: 100%;
-    z-index: -1;
-    -webkit-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
-}
 
+
+.header .header-main .logo-bg{
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width:15% ;
+    height: 74px;
+    background-color: #010F1C;
+    z-index: -1;
+}
 
 
 
