@@ -36,7 +36,7 @@
 
                                 <li class="">
                                     <i class="fa-sharp fa-regular fa-location-dot"> </i>
-                                    <span>Jardim do Éden, Luanda - Angola</span>
+                                    <span>Jardim de Rosa, Luanda - Angola</span>
                                     </span>
                                 </li>
 
@@ -61,11 +61,10 @@
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">Navbar</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
@@ -98,6 +97,51 @@
                 <div class="logo-bg bg-mask"></div>
             </nav>
         </div>
+        <!-- MENU HEADER -->
+         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home <i class="fa fa-plus"></i></a>
+                            </li>
+                             <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Sobre Nos <i class="fa fa-plus"></i></a>
+                            </li>
+                             <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Serviços <i class="fa fa-plus"></i></a>
+                            </li>
+                             <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Contacto <i class="fa fa-plus"></i></a>
+                            </li>
+                        </ul>
+                        <div class="mt-5" id="offcanvas-contact">
+                          <h5 class="title">Contacto</h5>
+
+                          <ul class="nav flex-column">
+                              <li class="nav-item">
+                                  <a class="nav-link" href="http://maps.google.com/maps?q=-8.9696347,13.2298243&z=14" target="_blank"><i class="fa fa-road"></i> Jardim de Rosa, Luanda - Angola </a>
+                              </li>
+                              
+                              <li class="nav-item">
+                                  <a class="nav-link" href="mailto:geral@agilesolutions.ao"> <i class="fa fa-envelope"></i>
+                                      geral@agilesolutions.ao</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="#"> <i class="fa fa-clock-o"></i> Segunda a Sexta -
+                                      08h:18h</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="tel:+244935378674"> <i class="fa fa-phone"></i> (+244) 935 378
+                                      674</a>
+                          </ul>
+                      </div>
+                    </div>
+                </div>
     </header>
     <div class="el"></div>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
