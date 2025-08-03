@@ -185,6 +185,10 @@ a {
     margin-right: 95px;
 }
 
+.header .navbar {
+    /* --bs-navbar-padding-y: 0.7rem; */
+}
+
 .navbar-brand {
     color: var(--white-color);
 }
@@ -291,6 +295,8 @@ header .header-main .nav-link:hover {
     z-index: -1;
 }
 
+@media (max-width: 768px) {}
+
 /* MENU  offcanvas */
 .offcanvas-header {
     background: var(--primary-color);
@@ -310,16 +316,20 @@ header .header-main .nav-link:hover {
     position: absolute;
     left: 90%;
 }
+
 .header .offcanvas-body a.nav-link {
     color: #0e121d;
     padding: 12px 0;
 }
-.carousel .carousel-item{
+
+/* CAROUSEL */
+.carousel .carousel-item {
     height: 720px;
     width: 100%;
     background-size: cover;
 }
-.carousel .carousel-item::before{
+
+.carousel .carousel-item::before {
     content: '';
     position: absolute;
     top: 0;
@@ -328,6 +338,33 @@ header .header-main .nav-link:hover {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+.carousel-caption {
+    bottom: 12rem;
+    text-align: start;
+}
+
+.carousel-caption .sub-title {
+    position: relative;
+    font-family: var(--title-fosnt);
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #FFB30F;
+    margin-bottom: 10px;
+    padding: 0
+}
+
+.carousel-caption .hero-title {
+    font-size: 120px;
+    line-height: 130px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--white-color);
+    margin-bottom: 30px;
+}
+
 @media (min-width: 1200px) {
     .d-xl-inline-block {
         display: inline-block !important;
@@ -336,7 +373,8 @@ header .header-main .nav-link:hover {
 
 @media (max-width: 1200px) {
     .header .header-main .logo-bg {
-        bottom: -22px;
+        /* bottom: -22px; */
+        bottom: 0px;
     }
 }
 
@@ -359,15 +397,59 @@ header .header-main .nav-link:hover {
     }
 }
 
+@media (min-width: 991px) {
+    .carousel-caption .hero-title .highlight {
+        display: block;
+    }
+}
+
 @media (max-width: 991px) {
     .header .header-main .logo-bg {
         width: 50%;
-        bottom: -18px;
+        /* bottom: -18px; */
+        bottom: 0px;
+    }
+
+    .hero-title {
+        text-align: center;
+        font-size: 76px;
+        line-height: 86px;
     }
 }
 
 @media (max-width: 767px) {
     .header .header-main .logo-bg {
         width: 60%;
+    }
+
+    .header .header-main .container-fluid {
+        margin-right: 20px;
+    }
+}
+
+@media (min-width: 767px) {
+    .header .header-main .container-fiuld {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 1117px) {
+    .carousel-caption {
+        bottom: 3rem;
+        text-align: start;
+    }
+}
+
+@media (max-width: 789px) {
+    .carousel-caption {
+        bottom: 0rem;
+        text-align: start;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-caption {
+        bottom: 0rem;
+        text-align: start;
     }
 }
