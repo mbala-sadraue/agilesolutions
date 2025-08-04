@@ -295,6 +295,16 @@ header .header-main .nav-link:hover {
     z-index: -1;
 }
 
+.navbar-toggler {
+    background: var(--secondary-color);
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: unset;
+}
+
 @media (max-width: 768px) {}
 
 /* MENU  offcanvas */
@@ -347,7 +357,7 @@ header .header-main .nav-link:hover {
 .carousel-caption .sub-title {
     position: relative;
     font-family: var(--title-fosnt);
-    font-weight: 500;
+    font-weight: 700;
     font-size: 30px;
     letter-spacing: 0.02em;
     text-transform: uppercase;
@@ -410,6 +420,10 @@ header .header-main .nav-link:hover {
         bottom: 0px;
     }
 
+    .carousel-caption {
+        text-align: center;
+    }
+
     .hero-title {
         text-align: center;
         font-size: 76px;
@@ -435,21 +449,30 @@ header .header-main .nav-link:hover {
 
 @media (max-width: 1117px) {
     .carousel-caption {
-        bottom: 3rem;
-        text-align: start;
+        bottom: 16rem;
+        text-align: center;
+    }
+
+    .carousel-caption .sub-title {
+        font-size: 15px;
+    }
+
+    .carousel-caption .hero-title {
+        font-size: 50px;
+        line-height: 75px;
     }
 }
 
 @media (max-width: 789px) {
     .carousel-caption {
-        bottom: 0rem;
-        text-align: start;
+        bottom: 16rem;
+        text-align: center;
     }
 }
 
 @media (max-width: 768px) {
     .carousel-caption {
-        bottom: 0rem;
-        text-align: start;
+        bottom: 16rem;
+        text-align: center;
     }
 }
