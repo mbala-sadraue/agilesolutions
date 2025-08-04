@@ -188,9 +188,7 @@ a {
     margin-right: 95px;
 }
 
-.header .navbar {
-    /* --bs-navbar-padding-y: 0.7rem; */
-}
+
 
 .navbar-brand {
     color: var(--white-color);
@@ -775,6 +773,32 @@ button:not(:disabled) {
     }
 }
 
+/* SECTION WHY CHOOSE US */
+
+.section-why-choose-us {
+    padding: 100px 0;
+}
+.section-why-choose-us h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    color: var(--dark-color);
+}
+
+.btn-one {
+    font-weight: 600;
+    color: var(--white-color);
+    text-transform: capitalize;
+    position: relative;
+    z-index: 1;
+    padding: 15px 25px;
+    background: var(--secondary-color);
+    transition: var(--transition);
+    overflow: hidden;
+}
+.section-header h2 {
+    text-transform: capitalize;
+}
 
 @media (max-width: 767px) {
     .header .header-main .logo-bg {
@@ -784,15 +808,16 @@ button:not(:disabled) {
     .header .header-main .container-fluid {
         margin-right: 20px;
     }
+    .service-two__item {
+        margin-bottom: 30px;
+    }
 }
 
 @media (min-width: 767px) {
     .header .header-main .container-fiuld {
         margin-right: 20px;
     }
-    .service-two__item {
-        margin-bottom: 30px;
-    }
+    
 }
 
 @media (max-width: 1117px) {
