@@ -1,18 +1,23 @@
 :root {
     --primary-color: #1979C2;
     --secondary-color: #FFB30F;
-    --theme-color: #57B33E;
+    --theme-color: #1979C2;
     --success-color: #28a745;
     --danger-color: #dc3545;
     --warning-color: #ffc107;
     --info-color: #17a2b8;
     --light-color: #f8f9fa;
     --dark-color: #343a40;
+    --color-dark: #19232B;
     --text-color: #757F95;
     --white-color: #fff;
     --smoke-color: #E0E0E0;
+    --theme-color-light: rgb(17, 110, 99, 0.09);
 
     --body-color: #4D5765;
+
+    --box-shadow: 0 0 40px 5px rgb(0 0 0 / 5%);
+    --transition: all .5s ease-in-out;
 
     --body-font: "DM Sans", sans-serif;
     --title-font: "Anek Latin", sans-serif;

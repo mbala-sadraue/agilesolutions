@@ -383,8 +383,9 @@ header .header-main .nav-link:hover {
 .carousel-footer-asider {
     position: relative;
 }
+
 .carousel-footer {
-    position: absolute;
+    position: relative;
     left: 0;
     right: 0;
     bottom: 0;
@@ -392,11 +393,209 @@ header .header-main .nav-link:hover {
 }
 
 .carousel-footer-item {
-    border: 1px solid #E5E5E5;
+    /* border: 1px solid #E5E5E5; */
     height: 250px;
     background: var(--white-color);
     border-radius: 14px;
+    /* border-radius: 50px 50px 50px 0px; */
+    box-shadow: var(--box-shadow);
+    z-index: 1;
 }
+
+
+
+/* ABOUT SECTION  */
+/* .about-section {
+    padding: 100px 0;
+} */
+
+.about-section {}
+
+.about-right {
+    position: relative;
+    display: block;
+}
+
+.site-heading {
+    margin-bottom: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.site-title-tagline {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--secondary-color);
+    position: relative;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.site-title {
+    font-weight: 800;
+    text-transform: capitalize;
+    font-size: 55px;
+    color: var(--color-dark);
+    margin-top: 10px;
+    margin-bottom: 0;
+    position: relative;
+}
+
+.site-title span {
+    color: var(--secondary-color);
+}
+
+.about-content {
+    margin-top: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border-info-color);
+}
+
+.about-item {
+    position: relative;
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.about-item-icon {
+    width: 70px;
+    height: 70px;
+    line-height: 58px;
+    text-align: center;
+    margin-bottom: 12px;
+    background: var(--secondary-color);
+    border-radius: 50px;
+    font-size: 45px;
+    color: var(--theme-color);
+    box-shadow: -5px 5px 0 var(--theme-color-light);
+}
+
+.about-item-icon img {
+    width: 45px;
+    filter: brightness(0) invert(1);
+}
+
+.about-item-content {
+    flex: 1;
+}
+
+.about-item-content h5 {
+    font-size: 22px;
+    margin-bottom: 5px;
+    color: var(--color-dark);
+}
+
+.about-quote {
+    position: relative;
+    color: var(--color-dark);
+    padding: 20px 22px;
+    background: var(--theme-color-light);
+    border-radius: 20px;
+}
+
+.about-quote i {
+    position: absolute;
+    font-size: 45px;
+    color: var(--primary-color);
+    right: 15px;
+    bottom: -15px;
+}
+
+.about-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.theme-btn {
+    font-size: 14px;
+    color: var(--white-color);
+    padding: 14px 20px;
+    transition: var(--transition);
+    text-transform: uppercase;
+    position: relative;
+    border-radius: 50px 50px 50px 0;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    text-align: center;
+    overflow: hidden;
+    border: none;
+    background: var(--secondary-color);
+    box-shadow: var(--box-shadow);
+    z-index: 1;
+}
+
+.about-phone {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.about-phone .icon {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    background: var(--theme-color);
+    color: var(--white-color);
+    border-radius: 50px;
+    text-align: center;
+    font-size: 22px;
+    box-shadow: -5px 5px 0 var(--theme-color-light);
+}
+
+/* .about-phone .number {
+    line-height: 1;
+} */
+.about-phone .number h6 a {
+    color: var(--theme-color);
+}
+
+.about-img .img-1 {
+    border-radius: 80px 80px 0 80px;
+}
+
+.about-img .img-2 {
+    /* border-radius: 50%; */
+    border: 2px dashed var(--secondary-color);
+    padding: 8px;
+}
+
+.about-img .img-3 {
+    border-radius: 0 80px 80px 80px;
+}
+
+.about-experience {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background: var(--secondary-color);
+    padding: 15px 20px 15px 15px;
+    color: var(--white-color);
+    border-radius: 50px 50px 50px 0;
+    box-shadow: 0 0 40px 5px rgb(0 0 0 / 10%);
+}
+
+.about-experience-icon {
+    color: var(--primary-color);
+    font-size: 65px;
+    width: 90px;
+    height: 90px;
+    line-height: 70px;
+    text-align: center;
+    margin: auto;
+    background: var(--white-color);
+    border-radius: 50px;
+    margin-bottom: 5px;
+}
+
+.about-experience-icon img {
+    width: 65px;
+}
+
 
 
 @media (min-width: 1200px) {
@@ -458,8 +657,14 @@ header .header-main .nav-link:hover {
         height: 670px;
         width: 100%;
         background-size: cover;
-    }.carousel-footer-item {
+    }
+
+    .carousel-footer-item {
         margin-bottom: 30px;
+    }
+
+    .site-title {
+        font-size: 45px
     }
 }
 
