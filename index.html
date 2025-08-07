@@ -599,11 +599,11 @@
         </div>
     </section>
 
-  
-        <div class="carousel" id="meuCarrossel">
-            <!-- Itens serão adicionados via JavaScript -->
-        </div>
-    
+
+    <div class="carousel" id="meuCarrossel">
+        <!-- Itens serão adicionados via JavaScript -->
+    </div>
+
 
 
     <div class="center">
@@ -799,35 +799,33 @@
                 `;
                 $carousel.append(slide);
             }
-             // Inicializa o Slick Slider
+            // Inicializa o Slick Slider
             $carousel.slick({
-                          centerMode: true,
-            centerPadding: '60px',
-            slidesToShow: 3,
-            autoplay: true,
-            responsive: [
-                {
-                    breakpoint: 768,
-                    settings: {
-                        arrows: false,
-                        centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 3
+                centerMode: true,
+                centerPadding: '60px',
+                slidesToShow: 3,
+                autoplay: true,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 1
+                        }
                     }
-                },
-                {
-                    breakpoint: 480,
-                    settings: {
-                        arrows: false,
-                        centerMode: true,
-                        centerPadding: '40px',
-                        slidesToShow: 1
-                    }
-                }
-            ]
+                ]
             });
-
-
 
         }
         // Função para atualizar o carrossel
