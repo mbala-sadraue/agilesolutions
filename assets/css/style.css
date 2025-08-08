@@ -664,7 +664,35 @@ button:not(:disabled) {
 .image img {
     width: 100%;
 }
-
+.services-section .swiper {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+}
+.services-section .swiper-wrapper{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    transition-property: transform;
+    box-sizing: content-box;
+}
+.services-section .swiper-slide {
+    flex-shrink: 0;
+    width: 370px;
+    height: 100%;
+    position: relative;
+    transition-property: transform;
+    margin-right: 30px;
+}
+.slick-slide {
+margin-right: 30px;
+ }
 .service-two__content {
     position: relative;
     padding: 30px;
