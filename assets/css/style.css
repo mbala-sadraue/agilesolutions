@@ -343,6 +343,112 @@ header .header-main .nav-link:hover {
     color: var(--secondary-color);
 }
 
+
+/* BANNER SHORT */
+.short-banner-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    position: relative;
+    padding-top: 170px;
+    padding-bottom: 150px;
+    z-index: 1;
+}
+
+.short-banner-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: cover !important;
+  position: relative;
+  padding-top: 170px;
+  padding-bottom: 150px;
+  z-index: 1;
+}
+
+.short-banner-section::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.65;
+  z-index: -1;
+}
+
+.short-banner-section .breadcrumb-title {
+  font-size: 45px;
+  color: var(--white-color);
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.short-banner-section .breadcrumb-menu {
+  position: relative;
+  z-index: 1;
+}
+
+.short-banner-section .breadcrumb-menu li {
+  position: relative;
+  display: inline-block;
+  margin-left: 25px;
+  color: var(--white-color);
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.short-banner-section .breadcrumb-menu li a {
+  color: var(--white-color);
+  transition: all 0.5s ease-in-out;
+}
+
+.short-banner-section .breadcrumb-menu li::before {
+  position: absolute;
+  content: '\f101';
+  font-family: 'Font Awesome 6 Pro';
+  right: -21px;
+  top: 1px;
+  text-align: center;
+  font-size: 16px;
+  color: var(--white-color);
+}
+
+.short-banner-section .breadcrumb-menu li:first-child {
+  margin-left: 0;
+}
+
+.short-banner-section .breadcrumb-menu li:last-child:before {
+  display: none;
+}
+
+.short-banner-section .breadcrumb-menu li a:hover {
+  color: var(--secondary-color);
+}
+
+.short-banner-section .breadcrumb-menu li.active {
+  color: var(--secondary-color);
+}
+
+@media (max-width: 991px) {
+  .short-banner-section {
+    padding-top: 230px;
+  }
+}
+
+
+
 /* CAROUSEL */
 .carousel .carousel-item {
     height: 735px;
