@@ -1,3 +1,8 @@
+import { BiEnvelope } from "react-icons/bi";
+import { BsClock, BsInstagram, BsLinkedin, BsTwitterX, BsYoutube } from "react-icons/bs";
+import { FaFacebookF } from "react-icons/fa";
+import { GoLocation } from "react-icons/go";
+
 const Header = () => {
 
 
@@ -7,41 +12,39 @@ const Header = () => {
 
 
 
-            <header className="header th-header">
+            <header className="">
 
-                <div className="header-top">
-                    <div className="">
-                        <div className="">
-                            <div className="">
-                                <div className="">
-                                    <ul>
-                                        <li className="">
-                                            <i className=""></i>
-                                            <span>Secunda - Sexta:
-                                                8:00 - 18:00 / Sábado 8:00 - 14:00</span>
-                                        </li>
-                                        <li>
-                                            <i className=""></i>
-                                            <a href="mailto:geral@agilesolutions.ao">geral@agilesolutions.ao</a>
-                                        </li>
+                <div className="bg-primary text-white py-3">
+                    <div className="m-auto max-w-7xl">
+                        <div className=" flex flex-1  md:justify-between justify-center ">
+                            
+                                <ul className="md:flex flex-1 space-x-3 text-sm hidden">
+                                    <li className=" flex space-x-2 items-center">
+                                        <i className=""><BsClock className="text-secondary text-secondary text-[1rem]" /> </i>
+                                        <span>Secunda - Sexta:
+                                            8:00 - 18:00 / Sábado 8:00 - 14:00</span>
+                                    </li>
+                                    <li className="flex space-x-2 items-center">
+                                        <i className=""><BiEnvelope className="text-secondary text-[1.1rem]"/> </i>
+                                        <a href="mailto:geral@agilesolutions.ao">geral@agilesolutions.ao</a>
+                                    </li>
 
-                                        <li className="">
-                                            <i className=""> </i>
-                                            <span>Jardim de Rosa, Luanda - Angola</span>
+                                    <li className="flex space-x-2 items-center">
+                                        <i className=""><GoLocation className="text-secondary text-[1.1rem]"/> </i>
+                                        <span>Jardim de Rosa, Luanda - Angola</span>
 
-                                        </li>
+                                    </li>
 
 
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className="col-auto">
-                                <div className="social-links"><span className="">Siga-nos em:</span> <a
-                                    href="https://www.facebook.com/"><i className=""> </i></a> <a
-                                        href="https://www.twitter.com/"><i className=""></i></a> <a
-                                            href="https://www.linkedin.com/"><i className=""></i></a> <a
-                                                href="https://www.instagram.com/"><i className=""></i></a> <a
-                                                    href="https://www.youtube.com/"><i className=""></i></a></div>
+                                </ul>
+                          
+                            <div className="flex items-center space-x-4 ">
+                                <span className="text-sm font-normal">Siga-nos em:</span>
+                                <a href="https://www.facebook.com/" rel="noopener noreferrer"   target="_blank"><i className="hover:text-amber-400"><FaFacebookF /> </i></a>
+                                <a href="https://www.twitter.com/"  rel="noopener noreferrer"  target="_blank"><i className="hover:text-amber-400"><BsTwitterX /> </i></a>
+                                <a href="https://www.linkedin.com/"  rel="noopener noreferrer"  target="_blank"> <i className="hover:text-amber-400"><BsLinkedin /> </i></a>
+                                <a href="https://www.instagram.com/"  rel="noopener noreferrer"  target="_blank"><i className="hover:text-amber-400"><BsInstagram /> </i></a>
+                                <a href="https://www.youtube.com/" rel="noopener noreferrer"   target="_blank"><i className="hover:text-amber-400"><BsYoutube /> </i></a>
                             </div>
                         </div>
                     </div>
