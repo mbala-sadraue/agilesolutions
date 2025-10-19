@@ -3,6 +3,12 @@ import { BsClock, BsInstagram, BsLinkedin, BsTwitterX, BsYoutube } from "react-i
 import { FaFacebookF } from "react-icons/fa";
 import { GoLocation } from "react-icons/go";
 import './Header.css';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+
 
 const Header = () => {
 
@@ -137,6 +143,20 @@ const Header = () => {
                     </div>
                 </div> */}
             </header>
+
+
+            <Swiper
+      spaceBetween={50}
+      slidesPerView={3}
+      onSlideChange={() => console.log('slide change')}
+      onSwiper={(swiper) => console.log(swiper)}
+    >
+      <SwiperSlide>Slide 1</SwiperSlide>
+      <SwiperSlide>Slide 2</SwiperSlide>
+      <SwiperSlide>Slide 3</SwiperSlide>
+      <SwiperSlide>Slide 4</SwiperSlide>
+      ...
+    </Swiper>
 
 
 
