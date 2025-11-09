@@ -727,9 +727,9 @@ header .header-main .nav-link:hover {
     font-weight: 500;
 }
 
-.section-header h2 {
+/* .section-header h2 {
     text-transform: capitalize;
-}
+} */
 
 
 [type=button]:not(:disabled),
@@ -1045,9 +1045,7 @@ margin-right: 30px;
     color: rgba(255, 255, 255, 0.6);
 }
 
-.section-header h2 {
-    text-transform: capitalize;
-}
+
 .footer-section a{
     color: #b3deff;
 }
