@@ -1,13 +1,10 @@
    // Lista de itens (pode ser dinâmica, vinda de uma API, etc.)
         let itens = [
-            { id: 1, titulo: "Database Security", descricao: "Pellentesque nec the condimentum nec lorem nulla augue est ultricies ac iaculis.", imagem: "assets/images/services/service-02.jpg", icone: "assets/images/icons/construction.svg", shape: "assets/images/shape/service-two-item-shape.png" },
-            { id: 2, titulo: "Cloud Computing", descricao: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.", imagem: "assets/images/services/service-05.jpg", icone: "assets/images/icons/construction.svg", shape: "assets/images/shape/service-two-item-shape.png" },
-            { id: 3, titulo: "Web Development", descricao: "Suspendisse potenti. Vivamus in magna non ipsum.", imagem: "assets/images/services/service-03.jpg", icone: "assets/images/icons/construction.svg", shape: "assets/images/shape/service-two-item-shape.png" },
-            { id: 4, titulo: "Network Security", descricao: "Fusce dapibus, tellus ac cursus commodo.", imagem: "assets/images/services/service-04.jpg", icone: "assets/images/icons/construction.svg", shape: "assets/images/shape/service-two-item-shape.png" },
-            { id: 5, titulo: "AI Solutions", descricao: "Nulla vitae elit libero, a pharetra augue.", imagem: "assets/images/services/service-05.jpg", icone: "assets/images/icons/construction.svg", shape: "assets/images/shape/service-two-item-shape.png" },
-            { id: 6, titulo: "Data Analytics", descricao: "Cras mattis consectetur purus sit amet.", imagem: "assets/images/services/service-02.jpg", icone: "assets/images/icons/construction.svg", shape: "assets/images/shape/service-two-item-shape.png" },
-            { id: 7, titulo: "Cybersecurity", descricao: "Donec sed odio dui. Aenean eu leo quam.", imagem: "assets/images/services/service-02.jpg", icone: "assets/images/icons/construction.svg", shape: "assets/images/shape/service-two-item-shape.png" }
-        ];
+            { id: 1, titulo: "Transporte e Logística", descricao: "Armazéns controlados, entregas seguras, rotas otimizadas e organização otimizada.", imagem: "assets/images/services/service-02.jpg", icone: "assets/images/icons/construction.svg", shape: "assets/images/shape/service-two-item-shape.png" },
+            { id: 2, titulo: "Serviços Técnicos", descricao: "Instalação de sistemas de videovigilância, Monitoramento remoto e gravação 24.", imagem: "assets/images/services/service-05.jpg", icone: "assets/images/icons/construction.svg", shape: "assets/images/shape/service-two-item-shape.png" },
+            { id: 3, titulo: "Tecnologia e Inovação", descricao: "Comercialização de computadores e acessórios.", imagem: "assets/images/services/service-03.jpg", icone: "assets/images/icons/construction.svg", shape: "assets/images/shape/service-two-item-shape.png" },
+            { id: 4, titulo: "Reaproveitamento de Paletes", descricao: "Paletes reparadas com sustentabilidade. Limpeza profissional e conservação de espaços", imagem: "assets/images/services/service-04.jpg", icone: "assets/images/icons/construction.svg", shape: "assets/images/shape/service-two-item-shape.png" },
+           ];
         let indiceAtual = 0;
         const itensPorSlide = 3; // Quantidade de itens visíveis por slide
 
